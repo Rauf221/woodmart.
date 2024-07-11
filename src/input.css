@@ -87,12 +87,12 @@ body {
   padding: 0;
 }
 
-.swiper {
+.mySwiper {
   width: 100%;
   height: 100%;
 }
 
-.swiper-slide {
+.swiperlide1 {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -101,7 +101,7 @@ body {
   align-items: center;
 }
 
-.swiper-slide img {
+.swiperlide1 img {
   display: block;
   width: 100%;
   height: 100%;
@@ -115,7 +115,6 @@ body {
 .hovercolor {
   color: #5e6821;
 }
-
 
 @media (min-width: 640px) {
   .container {
@@ -160,7 +159,7 @@ body {
   transform: translateX(100%);
   transition: transform 0.3s ease;
   padding: 20px;
-  z-index: 1000;
+  z-index: 10000;
 }
 
 .closeBtn {
@@ -176,5 +175,72 @@ body {
 
 .imgtranslition :hover {
   transform: scale(1.2);
-  transition: transform 1s ease-out; 
+  transition: transform 1s ease-out;
 }
+.swiperwidht{
+  width: 100%;
+  height: 100%;
+}
+
+.swiperslide {
+  text-align: center;
+  font-size: 18px;
+  background: #ffffff00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:50;
+}
+
+@media (max-width: 760px) {
+  .swiper-button-next {
+    right: 20px;
+    transform: rotate(90deg);
+  }
+
+  .swiper-button-prev {
+    left: 20px;
+    transform: rotate(90deg);
+  }
+}
+
+.product-card .product-image-container img.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: scale(1);
+  transform: translate() 1s ease-in-out;
+}
+
+.product-card .product-image-container .icon-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 10px;
+  opacity:0;
+  width: 50px;
+  height: 90px;
+  gap: 0.7rem;
+  transform: translateX(25%);
+  transition: transform 0.7s ease;
+}
+
+.product-card .product-image-container:hover .hover-image {
+  opacity: 1;
+}
+
+.product-card .product-image-container:hover .main-image {
+  opacity: 0;
+}
+
+.product-card .product-image-container:hover .icon-box {
+  opacity: 1;
+  transform: translateX(0%)
+}
+
+
+

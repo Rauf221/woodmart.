@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     colors: {
       text: '#5e6821',
-      
+      bgcolor:'rgba(255, 255, 255, 0);'
       
     }
   },
