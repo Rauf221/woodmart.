@@ -32,7 +32,7 @@ document.addEventListener("click", (event) => {
 
 let swiperrr = new Swiper('.swiperwidht', {
   slidesPerView: 4,
-  
+  spaceBetween:2,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

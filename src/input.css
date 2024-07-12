@@ -116,36 +116,38 @@ body {
   color: #5e6821;
 }
 
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
+
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
   }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
   }
-}
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
   }
-}
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1340px;
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1340px;
+    }
   }
-}
-@media (min-width: 1340px) {
-  .container {
-    max-width: 1450px;
+  @media (min-width: 1450px) {
+    .container {
+      max-width: 1450px;
+    }
   }
-}
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
+  @media (min-width: 1600px) {
+    .container {
+      max-width: 1600px;
+    }
   }
-}
+
 
 /* Example CSS for the sidebar and close button */
 .sidebar {
@@ -192,7 +194,7 @@ body {
   gap:50;
 }
 
-@media (max-width: 760px) {
+/* @media (max-width: 760px) {
   .swiper-button-next {
     right: 20px;
     transform: rotate(90deg);
@@ -202,7 +204,7 @@ body {
     left: 20px;
     transform: rotate(90deg);
   }
-}
+} */
 
 .product-card .product-image-container img.hover-image {
   position: absolute;

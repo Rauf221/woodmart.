@@ -1,14 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./dist/**/*.{html,js}"]
-           ["./dist/{index.html}"],
-  theme: {
-    colors: {
-      text: '#5e6821',
-      bgcolor:'rgba(255, 255, 255, 0);'
-      
-    }
-  },
+  content:["./public/*.html"],
+          
+  
     extend: {
 
     },
@@ -21,19 +15,25 @@ module.exports = {
     
   ],
   theme: {
-    screens: {
-      'sm': '640px',
-      'md': '768px',
-      'lg': '1024px',
-      'xl': '1280px',
-      '2xl': '1536px',
+    colors: {
+      text: '#5e6821',
+      bgcolor:'rgba(255, 255, 255, 0);',
+      bodycolor:'rgba(94,104,33,0.09)',
+      primaryclor:'rgb(94,104,33);',
     },
-    screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px',
-    },
+    // screens: {
+    //   'sm': '640px',
+    //   'md': '768px',
+    //   'lg': '1024px',
+    //   'xl': '1280px',
+    //   '2xl': '1536px',
+    // },
+    // screens: {
+    //   sm: '480px',
+    //   md: '768px',
+    //   lg: '976px',
+    //   xl: '1440px',
+    // },
     colors: {
       'blue': '#1fb6ff',
       'purple': '#7e5bef',
