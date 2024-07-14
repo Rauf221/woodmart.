@@ -243,9 +243,17 @@ body {
 .product-card .product-image-container:hover .icon-box {
   opacity: 1;
   transform: translateX(0%);
-  
-  
 }
+  .sidebar {
+    transition: transform 0.3s ease-in-out;
+}
+.sidebar-closed {
+    transform: translateX(100%);
+}
+.sidebar-open {
+    transform: translateX(0);
+}
+
 
 
 

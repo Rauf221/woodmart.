@@ -48,6 +48,7 @@
     "isexe": "^2.0.0",
     "jackspeak": "^3.4.2",
     "jiti": "^1.21.6",
+    "json-server": "^1.0.0-beta.1",
     "lilconfig": "^2.1.0",
     "lines-and-columns": "^1.2.4",
     "lru-cache": "^10.4.3",
@@ -101,10 +102,10 @@
     "wrap-ansi": "^8.1.0",
     "wrap-ansi-cjs": "^7.0.0",
     "yaml": "^2.4.5"
-    
   },
   "scripts": {
-   "build:css": "postcss src/input.css -o src/styles/output.css"
+    "start": "json-server --watch db.json --port 3000",
+    "build:css": "postcss src/input.css -o src/styles/output.css"
   },
   "author": "",
   "license": "ISC",
