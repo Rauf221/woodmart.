@@ -149,7 +149,7 @@ body {
   }
 
 
-/* Example CSS for the sidebar and close button */
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -253,7 +253,12 @@ body {
 .sidebar-open {
     transform: translateX(0);
 }
-
+/* .texter{
+  transform: translateY(0%);
+}
+.texter:hover{
+  transform: translateY(100%);
+} */
 
 
 
