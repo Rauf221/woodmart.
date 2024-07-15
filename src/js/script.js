@@ -70,8 +70,8 @@ function datass(datas) {
                         <div class="price mb-2.5">
                             <span class="discounted-price text-black font-bold">$${item?.productPrice}</span>
                         </div>
-                        <button class="px-[15px] py-[10px] bg-[#5e6821] text-white border-none cursor-pointer transition duration-1000 ease hover:bg-[#4e5a03]">Select options</button>
-                        <button id="${item.id}" onclick="deleteItem('${item.id}')" class="deletebtn px-[15px] py-[10px] bg-[#5e6821] text-white border-none cursor-pointer transition duration-1000 ease hover:bg-[#4e5a03]">delete</button>
+                        
+                        <button id="${item.id}" onclick="addcard('${item.id}')" class="addBtn px-[15px] py-[10px] bg-[#5e6821] text-white border-none cursor-pointer transition duration-1000 ease hover:bg-[#4e5a03]">Add to card</button>
                     </div>
                 </div>
             </div>
@@ -81,19 +81,34 @@ function datass(datas) {
 
 getData();
 
-async function deleteItem(id) {
-    try {
-        const response = await fetch(`http://localhost:3000/data/${id}`, {
-            method: 'DELETE',
-        });
 
-        if (!response.ok) {
-            throw new Error('HTTP error ' + response.status);
-        }
 
-        // Remove item from DOM
-        document.getElementById(id).closest('.deletter').remove();
-    } catch (error) {
-        console.error('Error deleting item:', error);
-    }
+
+async function addcard(id) {
+  const datas = await getData(); // Await the async function to get the data
+  let addtocard = document.querySelector(".addtocard");
+
+  if (!addtocard) {
+      console.error("Element with class 'addtocard' not found.");
+      return;
+  }
+
+  addtocard.innerHTML = ''; // Clear previous content
+
+  datas.forEach(item => {
+      addtocard.insertAdjacentHTML('beforeend', `
+          <div class="card-item flex p-4 bg-gray-700 rounded-lg">
+              <div class="flex-shrink-0">
+                  <img src="${item.imageSrc}" alt="" class="w-16 h-16 rounded-full">
+              </div>
+              <div class="flex-grow ml-4">
+                  <h1 class="text-md font-semibold">${item.productName}</h1>
+                  <p class="text-sm text-gray-400">$${item.productPrice}</p>
+              </div>
+              <button onclick="deleteItem(${item.id})" class="text-gray-500 hover:text-red-500">
+                  <i class="fas fa-times"></i>
+              </button>
+          </div>
+      `);
+  });
 }
