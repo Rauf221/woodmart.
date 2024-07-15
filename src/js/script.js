@@ -84,8 +84,26 @@ getData();
 
 
 
-async function addcard(id) {
-  const datas = await getData(); // Await the async function to get the data
+function addToCart(id) {
+  const datas = JSON.parse(localStorage.getItem('cart')) || [];
+  const item = datas.find(item => item.id == id);
+  
+  if (!item) {
+      getData().then(data => {
+          const product = data.find(product => product.id == id);
+          if (product) {
+              datas.push(product);
+              localStorage.setItem('cart', JSON.stringify(datas));
+              fillBasket();
+          }
+      });
+  } else {
+      alert("Item already in cart");
+  }
+}
+
+function fillBasket() {
+  let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
   let addtocard = document.querySelector(".addtocard");
 
   if (!addtocard) {
@@ -93,9 +111,9 @@ async function addcard(id) {
       return;
   }
 
-  addtocard.innerHTML = ''; // Clear previous content
+  addtocard.innerHTML = '';
 
-  datas.forEach(item => {
+  cartItems.forEach(item => {
       addtocard.insertAdjacentHTML('beforeend', `
           <div class="card-item flex p-4 bg-gray-700 rounded-lg">
               <div class="flex-shrink-0">
@@ -112,3 +130,13 @@ async function addcard(id) {
       `);
   });
 }
+
+function deleteItem(id) {
+  let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+  cartItems = cartItems.filter(item => item.id != id);
+  localStorage.setItem('cart', JSON.stringify(cartItems));
+  fillBasket();
+}
+
+// Initialize the basket on page load
+document.addEventListener("DOMContentLoaded", fillBasket);

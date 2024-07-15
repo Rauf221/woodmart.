@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../src/clash-display.css" />
+    <link rel="stylesheet" href="../src/styles/output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+  
+</head>
+<body>
+    <header class="container mx-auto mt-7">
+        <nav class="w-[100%] mt-7">
+          <div class="border-b-2 w-[100%] border-black h-[60px]">
+            <div class="flex justify-between items-center">
+              <div>
+                <ul class="flex gap-5 text-lg">
+                  <li class="hover:text-[#5e6821] group">
+                    <a href="./index.html"></a>Shop<i class="text-sm fa-solid fa-chevron-down"></i>
+                    <div class="absolute right-[0px] w-[100%] pt-5 z-40 bg-white hidden group-hover:flex">
+                      <div class="flex h-[200px] items-center z-50 group-hover:flex gap-40 pl-[150px]">
+                        <div class=" flex justify-center items-center flex-col ">
+                          <div class="  imgtranslition rounded-full h-[80px] w-[80px] overflow-hidden">
+                            <img class=""
+                              src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-plants.jpg.webp"
+                              alt="" />
+                          </div>
+    
+                          <div>
+                            <h1 class="text-2xl">Plants</h1>
+                          </div>
+                          <div>
+                            <h2>25 Products</h2>
+                          </div>
+                        </div>
+                        <div class=" flex justify-center items-center flex-col ">
+                          <div class="  imgtranslition rounded-full h-[80px] w-[80px] overflow-hidden">
+                            <img class=" "
+                              src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-planters.jpg.webp"
+                              alt="" />
+                          </div>
+    
+                          <div>
+                            <h1>Plants</h1>
+                          </div>
+                          <div>
+                            <h2>25 Products</h2>
+                          </div>
+                        </div>
+                        <div class=" flex justify-center items-center flex-col ">
+                          <div class=" imgtranslition rounded-full h-[80px] w-[80px] overflow-hidden">
+                            <img class=" "
+                              src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-plant-care.jpg.webp"
+                              alt="" />
+                          </div>
+    
+                          <div>
+                            <h1>Plants</h1>
+                          </div>
+                          <div>
+                            <h2>25 Products</h2>
+                          </div>
+                        </div>
+                        <div class=" flex justify-center items-center flex-col ">
+                          <div class=" imgtranslition rounded-full h-[80px] w-[80px] overflow-hidden">
+                            <img class=""
+                              src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-pet-friendly.jpg.webp"
+                              alt="" />
+                          </div>
+                          <div>
+                            <h1>Plants</h1>
+                          </div>
+                          <div>
+                            <h2>25 Products</h2>
+                          </div>
+                        </div>
+                        <div class="  flex justify-center items-center flex-col">
+                          <div class=" imgtranslition rounded-full h-[80px] w-[80px] overflow-hidden">
+                            <img class=" "
+                              src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-gift-ideas.jpg.webp"
+                              alt="" />
+                          </div>
+                          <div>
+                            <h1>Plants</h1>
+                          </div>
+                          <div>
+                            <h2>25 Products</h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="hover:text-[#5e6821]">
+                    <a href="./blog.html">Blog</a>
+                  </li>
+                  <li class="hover:text-[#5e6821]">Care library</li>
+                  <li class="hover:text-[#5e6821]">About us</li>
+                  <li class="hover:text-[#5e6821]">Cantact us</li>
+                </ul>
+              </div>
+              <div class="hover:cursor-pointer">
+                <img class="w-[220px]"
+                  src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/woodmart-plant-store-logo.svg"
+                  alt="" />
+              </div>
+              <div class="flex gap-5 text-lg">
+                <span class="hover:cursor-pointer hover:text-[#5e6821]">Login / Register</span>
+                <span class="hover:cursor-pointer hover:text-[#5e6821]"><i
+                    class="hover:cursor-pointer hover:text-[#5e6821] fa-solid fa-magnifying-glass text-xl"></i></span>
+                <span class="hover:cursor-pointer hover:text-[#5e6821]"><i
+                    class="hover:cursor-pointer hover:text-[#5e6821] fa-regular fa-heart mr-3 text-xl"></i>0</span>
+                <a onclick="toggleSidebar()" juhjg class="hover:cursor-pointer hover:text-[#5e6821] menu-button ">
+                  <i class="hover:cursor-pointer hover:text-[#5e6821] fa-solid fa-bag-shopping mr-3 text-xl"></i>0/$0.00
+                </a>
+    
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <div id="overlay" class="fixed inset-0 bg-black opacity-50 hidden"></div>
+   <main class="container mx-auto ">
+    <section id="section4customcards" class="mt-10 ">
+        <div class="card-container flex flex-col gap-8 py-8">
+          <div class="card-item flex w-[100% ] items-center gap-8 pb-8 border-b border-gray-300 ">
+            <div class="card-image overflow-hidden relative">
+              <img src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-1.jpg.webp"
+                alt=""
+                class="object-cover w-[500px] h-[250px]  cursor-pointer transition-transform duration-500 hover:scale-110" />
+              <div class="card-image-overlay flex flex-col justify-between p-4 absolute inset-0">
+                <div class="card-date bg-white font-semibold text-center w-16 h-12">
+                  11
+                  <p>MAY</p>
+                </div>
+                <div class="card-category-btn">
+                  <button
+                    class="bg-[#5e6821] text-white py-1 px-2  transition-colors duration-300 hover:bg-[#55610b] hover:text-[#d6d6d6]">DESIGN
+                    TIPS</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-content flex w-[100%] flex-col gap-4">
+              <div class="card-info flex items-center gap-2 text-gray-400 font-bold">
+                <img src="https://woodmart.xtemos.com/wp-content/uploads/2018/10/avatar-home.jpg.webp" alt=""
+                  class="rounded-full" />
+                <span>Posted by</span>
+                <span class="author-name cursor-pointer text-gray-500 transition-colors hover:text-gray-700">Mr.
+                  Mackay</span>
+                <i class="fa-solid fa-share-nodes cursor-pointer"></i>
+                <div class="relative">
+                  <i class="fa-regular fa-comment cursor-pointer"></i>
+                  <span
+                    class="comment-count absolute top-[-3px] right-[-10px] bg-[#545f09] text-white rounded-full px-1 text-xs font-bold">0</span>
+                </div>
+              </div>
+              <div class="flex justify-between ">
+                <div class="card-title text-2xl lg:text-4xl font-medium">
+                  <h2 class="cursor-pointer transition-opacity hover:opacity-80">Flower Arrangement Tips & Tricks from
+                    Floral Experts</h2>
+                </div>
+                <div class="read-more-btn">
+                  <button
+                    class="w-30 bg-[#5e6821] text-white py-3 px-5  transition-colors duration-300 hover:bg-[#545f09]">Continue
+                    Reading</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex w-[100%] items-center gap-8 pb-8 border-b border-gray-300">
+            <div class="card-image  overflow-hidden relative">
+              <img src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-2.jpg.webp"
+                alt=""
+                class="object-cover w-[500px] h-[250px]  cursor-pointer transition-transform duration-500 hover:scale-110" />
+              <div class="card-image-overlay flex flex-col justify-between p-4 absolute inset-0">
+                <div class="card-date bg-white font-semibold text-center w-16 h-12">
+                  30
+                  <p>APR</p>
+                </div>
+                <div class="card-category-btn">
+                  <button
+                    class="bg-[#5e6821] text-white py-1 px-2  transition-colors duration-300 hover:bg-[#55610b] hover:text-[#d6d6d6]">DESIGN
+                    TIPS, INTERVIEWS</button>
+                </div>
+              </div>
+            </div>
+            <div class="w-[100%] card-content flex flex-col gap-4">
+              <div class="card-info flex items-center gap-2 text-gray-400 font-bold">
+                <img src="https://woodmart.xtemos.com/wp-content/uploads/2018/10/avatar-home.jpg.webp" alt=""
+                  class="rounded-full" />
+                <span>Posted by</span>
+                <span class="author-name cursor-pointer text-gray-500 transition-colors hover:text-gray-700">Mr.
+                  Mackay</span>
+                <i class="fa-solid fa-share-nodes cursor-pointer"></i>
+                <div class="relative">
+                  <i class="fa-regular fa-comment cursor-pointer"></i>
+                  <span
+                    class="comment-count absolute top-[-3px] right-[-10px] bg-[#545f09] text-white rounded-full px-1 text-xs font-bold">0</span>
+                </div>
+              </div>
+              <div class="flex flex-nowrap justify-between ">
+                <div class="card-title text-2xl lg:text-4xl font-medium">
+                  <h2 class="cursor-pointer transition-opacity hover:opacity-80">How Often & How Much You Should Water
+                    Houseplants</h2>
+                </div>
+                <div class="read-more-btn">
+                  <button
+                    class="w-30 bg-[#5e6821] text-white py-3 px-5  transition-colors duration-300 hover:bg-[#545f09]">Continue
+                    Reading</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex w-[100%] items-center gap-8 pb-8 ">
+            <div class="card-image overflow-hidden relative ">
+              <img src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-3.jpg.webp"
+                alt=""
+                class="object-cover w-[500px] h-[250px]  cursor-pointer transition-transform duration-500 hover:scale-110"" />
+        <div class=" card-image-overlay flex flex-col justify-between p-4 absolute inset-0">
+              <div class="card-date bg-white font-semibold text-center w-16 h-12">
+                09
+                <p>APR</p>
+              </div>
+              <div class="card-category-btn">
+                <button
+                  class="bg-[#5e6821] text-white py-1 px-2 transition-colors duration-300 hover:bg-[#55610b] hover:text-[#d6d6d6]">COMMON
+                  CARE QUESTIONS</button>
+              </div>
+            </div>
+          </div>
+          <div class="card-content w-[100%] flex flex-col gap-4">
+            <div class="card-info flex items-center gap-2  text-gray-400 font-bold">
+              <img src="https://woodmart.xtemos.com/wp-content/uploads/2018/10/avatar-home.jpg.webp" alt=""
+                class="rounded-full" />
+              <span>Posted by</span>
+              <span class="author-name cursor-pointer text-gray-500 transition-colors hover:text-gray-700">Mr.
+                Mackay</span>
+              <i class="fa-solid fa-share-nodes cursor-pointer"></i>
+              <div class="relative">
+                <i class="fa-regular fa-comment cursor-pointer"></i>
+                <span
+                  class="comment-count absolute top-[-3px] right-[-10px] bg-[#545f09]  text-white rounded-full px-1 text-xs font-bold">0</span>
+              </div>
+            </div>
+            <div class="flex justify-between w-[100%]">
+              <div class="card-title text-2xl lg:text-4xl font-medium">
+                <h2 class="cursor-pointer transition-opacity hover:opacity-80">Top 10 Tips and Tricks To Beat the Winter
+                  Blues</h2>
+              </div>
+              <div class="read-more-btn">
+                <button
+                  class="w-30 bg-[#5e6821] text-white py-3 px-5  transition-colors duration-300 hover:bg-[#545f09]">Continue
+                  Reading</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-item flex w-[100% ] items-center gap-8 pb-8 border-b border-gray-300 ">
+            <div class="card-image overflow-hidden relative">
+              <img src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-1.jpg.webp"
+                alt=""
+                class="object-cover w-[500px] h-[250px]  cursor-pointer transition-transform duration-500 hover:scale-110" />
+              <div class="card-image-overlay flex flex-col justify-between p-4 absolute inset-0">
+                <div class="card-date bg-white font-semibold text-center w-16 h-12">
+                  11
+                  <p>MAY</p>
+                </div>
+                <div class="card-category-btn">
+                  <button
+                    class="bg-[#5e6821] text-white py-1 px-2 transition-colors duration-300 hover:bg-[#55610b] hover:text-[#d6d6d6]">DESIGN
+                    TIPS</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-content flex w-[100%] flex-col gap-4">
+              <div class="card-info flex items-center gap-2 text-gray-400 font-bold">
+                <img src="https://woodmart.xtemos.com/wp-content/uploads/2018/10/avatar-home.jpg.webp" alt=""
+                  class="rounded-full" />
+                <span>Posted by</span>
+                <span class="author-name cursor-pointer text-gray-500 transition-colors hover:text-gray-700">Mr.
+                  Mackay</span>
+                <i class="fa-solid fa-share-nodes cursor-pointer"></i>
+                <div class="relative">
+                  <i class="fa-regular fa-comment cursor-pointer"></i>
+                  <span
+                    class="comment-count absolute top-[-3px] right-[-10px] bg-[#545f09] text-white rounded-full px-1 text-xs font-bold">0</span>
+                </div>
+              </div>
+              <div class="flex justify-between ">
+                <div class="card-title text-2xl lg:text-4xl font-medium">
+                  <h2 class="cursor-pointer transition-opacity hover:opacity-80">Flower Arrangement Tips & Tricks from
+                    Floral Experts</h2>
+                </div>
+                <div class="read-more-btn">
+                  <button
+                    class="w-30 bg-[#5e6821] text-white py-3 px-5  transition-colors duration-300 hover:bg-[#545f09]">Continue
+                    Reading</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex w-[100%] items-center gap-8 pb-8 border-b border-gray-300">
+            <div class="card-image  overflow-hidden relative">
+              <img src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-2.jpg.webp"
+                alt=""
+                class="object-cover w-[500px] h-[250px]  cursor-pointer transition-transform duration-500 hover:scale-110" />
+              <div class="card-image-overlay flex flex-col justify-between p-4 absolute inset-0">
+                <div class="card-date bg-white font-semibold text-center w-16 h-12">
+                  30
+                  <p>APR</p>
+                </div>
+                <div class="card-category-btn">
+                  <button
+                    class="bg-[#5e6821] text-white py-1 px-2  transition-colors duration-300 hover:bg-[#55610b] hover:text-[#d6d6d6]">DESIGN
+                    TIPS, INTERVIEWS</button>
+                </div>
+              </div>
+            </div>
+            <div class="w-[100%] card-content flex flex-col gap-4">
+              <div class="card-info flex items-center gap-2 text-gray-400 font-bold">
+                <img src="https://woodmart.xtemos.com/wp-content/uploads/2018/10/avatar-home.jpg.webp" alt=""
+                  class="rounded-full" />
+                <span>Posted by</span>
+                <span class="author-name cursor-pointer text-gray-500 transition-colors hover:text-gray-700">Mr.
+                  Mackay</span>
+                <i class="fa-solid fa-share-nodes cursor-pointer"></i>
+                <div class="relative">
+                  <i class="fa-regular fa-comment cursor-pointer"></i>
+                  <span
+                    class="comment-count absolute top-[-3px] right-[-10px] bg-[#545f09] text-white rounded-full px-1 text-xs font-bold">0</span>
+                </div>
+              </div>
+              <div class="flex flex-nowrap justify-between ">
+                <div class="card-title text-2xl lg:text-4xl font-medium">
+                  <h2 class="cursor-pointer transition-opacity hover:opacity-80">How Often & How Much You Should Water
+                    Houseplants</h2>
+                </div>
+                <div class="read-more-btn">
+                  <button
+                    class="w-30 bg-[#5e6821] text-white py-3 px-5  transition-colors duration-300 hover:bg-[#545f09]">Continue
+                    Reading</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex w-[100%] items-center gap-8 pb-8 ">
+            <div class="card-image overflow-hidden relative ">
+              <img src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-3.jpg.webp"
+                alt=""
+                class="object-cover w-[500px] h-[250px]  cursor-pointer transition-transform duration-500 hover:scale-110"" />
+        <div class=" card-image-overlay flex flex-col justify-between p-4 absolute inset-0">
+              <div class="card-date bg-white font-semibold text-center w-16 h-12">
+                09
+                <p>APR</p>
+              </div>
+              <div class="card-category-btn">
+                <button
+                  class="bg-[#5e6821] text-white py-1 px-2 transition-colors duration-300 hover:bg-[#55610b] hover:text-[#d6d6d6]">COMMON
+                  CARE QUESTIONS</button>
+              </div>
+            </div>
+          </div>
+          <div class="card-content w-[100%] flex flex-col gap-4">
+            <div class="card-info flex items-center gap-2  text-gray-400 font-bold">
+              <img src="https://woodmart.xtemos.com/wp-content/uploads/2018/10/avatar-home.jpg.webp" alt=""
+                class="rounded-full" />
+              <span>Posted by</span>
+              <span class="author-name cursor-pointer text-gray-500 transition-colors hover:text-gray-700">Mr.
+                Mackay</span>
+              <i class="fa-solid fa-share-nodes cursor-pointer"></i>
+              <div class="relative">
+                <i class="fa-regular fa-comment cursor-pointer"></i>
+                <span
+                  class="comment-count absolute top-[-3px] right-[-10px] bg-[#545f09]  text-white rounded-full px-1 text-xs font-bold">0</span>
+              </div>
+            </div>
+            <div class="flex justify-between w-[100%]">
+              <div class="card-title text-2xl lg:text-4xl font-medium">
+                <h2 class="cursor-pointer transition-opacity hover:opacity-80">Top 10 Tips and Tricks To Beat the Winter
+                  Blues</h2>
+              </div>
+              <div class="read-more-btn">
+                <button
+                  class="w-30 bg-[#5e6821] text-white py-3 px-5  transition-colors duration-300 hover:bg-[#545f09]">Continue
+                  Reading</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-item flex w-[100% ] items-center gap-8 pb-8 border-b border-gray-300 ">
+            <div class="card-image overflow-hidden relative">
+              <img src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-1.jpg.webp"
+                alt=""
+                class="object-cover w-[500px] h-[250px]  cursor-pointer transition-transform duration-500 hover:scale-110" />
+              <div class="card-image-overlay flex flex-col justify-between p-4 absolute inset-0">
+                <div class="card-date bg-white font-semibold text-center w-16 h-12">
+                  11
+                  <p>MAY</p>
+                </div>
+                <div class="card-category-btn">
+                  <button
+                    class="bg-[#5e6821] text-white py-1 px-2  transition-colors duration-300 hover:bg-[#55610b] hover:text-[#d6d6d6]">DESIGN
+                    TIPS</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-content flex w-[100%] flex-col gap-4">
+              <div class="card-info flex items-center gap-2 text-gray-400 font-bold">
+                <img src="https://woodmart.xtemos.com/wp-content/uploads/2018/10/avatar-home.jpg.webp" alt=""
+                  class="rounded-full" />
+                <span>Posted by</span>
+                <span class="author-name cursor-pointer text-gray-500 transition-colors hover:text-gray-700">Mr.
+                  Mackay</span>
+                <i class="fa-solid fa-share-nodes cursor-pointer"></i>
+                <div class="relative">
+                  <i class="fa-regular fa-comment cursor-pointer"></i>
+                  <span
+                    class="comment-count absolute top-[-3px] right-[-10px] bg-[#545f09] text-white rounded-full px-1 text-xs font-bold">0</span>
+                </div>
+              </div>
+              <div class="flex justify-between ">
+                <div class="card-title text-2xl lg:text-4xl font-medium">
+                  <h2 class="cursor-pointer transition-opacity hover:opacity-80">Flower Arrangement Tips & Tricks from
+                    Floral Experts</h2>
+                </div>
+                <div class="read-more-btn">
+                  <button
+                    class="w-30 bg-[#5e6821] text-white py-3 px-5  transition-colors duration-300 hover:bg-[#545f09]">Continue
+                    Reading</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex w-[100%] items-center gap-8 pb-8 border-b border-gray-300">
+            <div class="card-image  overflow-hidden relative">
+              <img src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-2.jpg.webp"
+                alt=""
+                class="object-cover w-[500px] h-[250px]  cursor-pointer transition-transform duration-500 hover:scale-110" />
+              <div class="card-image-overlay flex flex-col justify-between p-4 absolute inset-0">
+                <div class="card-date bg-white font-semibold text-center w-16 h-12">
+                  30
+                  <p>APR</p>
+                </div>
+                <div class="card-category-btn">
+                  <button
+                    class="bg-[#5e6821] text-white py-1 px-2  transition-colors duration-300 hover:bg-[#55610b] hover:text-[#d6d6d6]">DESIGN
+                    TIPS, INTERVIEWS</button>
+                </div>
+              </div>
+            </div>
+            <div class="w-[100%] card-content flex flex-col gap-4">
+              <div class="card-info flex items-center gap-2 text-gray-400 font-bold">
+                <img src="https://woodmart.xtemos.com/wp-content/uploads/2018/10/avatar-home.jpg.webp" alt=""
+                  class="rounded-full" />
+                <span>Posted by</span>
+                <span class="author-name cursor-pointer text-gray-500 transition-colors hover:text-gray-700">Mr.
+                  Mackay</span>
+                <i class="fa-solid fa-share-nodes cursor-pointer"></i>
+                <div class="relative">
+                  <i class="fa-regular fa-comment cursor-pointer"></i>
+                  <span
+                    class="comment-count absolute top-[-3px] right-[-10px] bg-[#545f09] text-white rounded-full px-1 text-xs font-bold">0</span>
+                </div>
+              </div>
+              <div class="flex flex-nowrap justify-between ">
+                <div class="card-title text-2xl lg:text-4xl font-medium">
+                  <h2 class="cursor-pointer transition-opacity hover:opacity-80">How Often & How Much You Should Water
+                    Houseplants</h2>
+                </div>
+                <div class="read-more-btn">
+                  <button
+                    class="w-30 bg-[#5e6821] text-white py-3 px-5  transition-colors duration-300 hover:bg-[#545f09]">Continue
+                    Reading</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex w-[100%] items-center gap-8 pb-8 ">
+            <div class="card-image overflow-hidden relative ">
+              <img src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-blog-3.jpg.webp"
+                alt=""
+                class="object-cover w-[500px] h-[250px]  cursor-pointer transition-transform duration-500 hover:scale-110"" />
+        <div class=" card-image-overlay flex flex-col justify-between p-4 absolute inset-0">
+              <div class="card-date bg-white font-semibold text-center w-16 h-12">
+                09
+                <p>APR</p>
+              </div>
+              <div class="card-category-btn">
+                <button
+                  class="bg-[#5e6821] text-white py-1 px-2  transition-colors duration-300 hover:bg-[#55610b] hover:text-[#d6d6d6]">COMMON
+                  CARE QUESTIONS</button>
+              </div>
+            </div>
+          </div>
+          <div class="card-content w-[100%] flex flex-col gap-4">
+            <div class="card-info flex items-center gap-2  text-gray-400 font-bold">
+              <img src="https://woodmart.xtemos.com/wp-content/uploads/2018/10/avatar-home.jpg.webp" alt=""
+                class="rounded-full" />
+              <span>Posted by</span>
+              <span class="author-name cursor-pointer text-gray-500 transition-colors hover:text-gray-700">Mr.
+                Mackay</span>
+              <i class="fa-solid fa-share-nodes cursor-pointer"></i>
+              <div class="relative">
+                <i class="fa-regular fa-comment cursor-pointer"></i>
+                <span
+                  class="comment-count absolute top-[-3px] right-[-10px] bg-[#545f09]  text-white rounded-full px-1 text-xs font-bold">0</span>
+              </div>
+            </div>
+            <div class="flex justify-between w-[100%]">
+              <div class="card-title text-2xl lg:text-4xl font-medium">
+                <h2 class="cursor-pointer transition-opacity hover:opacity-80">Top 10 Tips and Tricks To Beat the Winter
+                  Blues</h2>
+              </div>
+              <div class="read-more-btn">
+                <button
+                  class="w-30 bg-[#5e6821] text-white py-3 px-5  transition-colors duration-300 hover:bg-[#545f09]">Continue
+                  Reading</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+   </main>
+    <main class="container mt-10 mx-auto">
+        <footer class="footer py-16 ">
+            <hr class="mb-8">
+            <div class="flex flex-wrap justify-between">
+              <div class="w-full md:w-2/6 mb-8 md:mb-0">
+                <div class="newsletter">
+                  <img
+                    src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/woodmart-plant-store-logo.svg"
+                    alt="Woodmart Logo" class="logo mb-6">
+                  <h2 class="text-3xl mb-6">Join our newsletter to stay up to date on features and releases.</h2>
+                  <div class="flex mb-6">
+                    <input type="email" placeholder="Your email address"
+                      class="flex-1 p-2 border border-gray-300 bg-[#5e682117] mr-4">
+                    <button type="submit" class="bg-[#5e6821] text-white py-2 px-4 hover:bg-[#6b7a38]">Sign up</button>
+                  </div>
+                  <p class="text-lg text-gray-600 mb-6">By subscribing you agree to with our Privacy Policy and provide
+                    consent to receive updates from our company.</p>
+                </div>
+                <div class="flex space-x-4">
+                  <a href="#"
+                    class="social-icon w-10 h-10 border-2 border-[#5e6821] rounded-full flex items-center justify-center text-[#5e6821] hover:bg-[#5e6821] hover:text-white transition"><i
+                      class="fab fa-facebook-f"></i></a>
+                  <a href="#"
+                    class="social-icon w-10 h-10 border-2 border-[#5e6821] rounded-full flex items-center justify-center text-[#5e6821] hover:bg-[#5e6821] hover:text-white transition"><i
+                      class="fab fa-x"></i></a>
+                  <a href="#"
+                    class="social-icon w-10 h-10 border-2 border-[#5e6821] rounded-full flex items-center justify-center text-[#5e6821] hover:bg-[#5e6821] hover:text-white transition"><i
+                      class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="w-full md:w-4/6 flex flex-wrap justify-between">
+                <div class="shop flex-1 ml-10 mb-8 md:mb-0 border-l-[#5e6821] border-l-2 md:pl-16">
+                  <div class="title text-3xl mb-6">Shop</div>
+                  <ul class="list-none text-xl">
+                    <li class="mb-4"><a href="#" class="hover:text-[#7c8c42]">Plants</a></li>
+                    <li class="mb-4"><a href="#" class="hover:text-[#7c8c42]">Planters</a></li>
+                    <li class="mb-4"><a href="#" class="hover:text-[#7c8c42]">Plant care</a></li>
+                    <li class="mb-4"><a href="#" class="hover:text-[#7c8c42]">Gift ideas</a></li>
+                    <li class="mb-4"><a href="#" class="hover:text-[#7c8c42]">Pet friendly</a></li>
+                  </ul>
+                </div>
+                <div class="useful-links flex-1 mb-8 md:mb-0 md:pl-4">
+                  <div class="title text-3xl mb-6">Useful links</div>
+                  <ul class="list-none text-xl">
+                    <li class="mb-4"><a href="#" class="hover:text-[#7c8c42]">Blog</a></li>
+                    <li class="mb-4"><a href="#" class="hover:text-[#7c8c42]">Care library</a></li>
+                    <li class="mb-4"><a href="#" class="hover:text-[#7c8c42]">Contact us</a></li>
+                    <li class="mb-4"><a href="#" class="hover:text-[#7c8c42]">About us</a></li>
+                    <li class="mb-4"><a href="#" class="hover:text-[#7c8c42]">Delivery & Return</a></li>
+                  </ul>
+                </div>
+                <div class="contacts flex-1 text-xl mb-8 md:mb-0 md:pl-4">
+                  <div class="title text-3xl mb-6">Contacts</div>
+                  <div class="mb-6 hover:text-[#7c8c42]">wood.plants@gmail.com</div>
+                  <div class="mb-6 hover:text-[#7c8c42]">(064) 332-1233</div>
+                  <div class="hover:text-[#7c8c42]">20 Auburn Ave NE, Atlanta, USA</div>
+                </div>
+              </div>
+            </div>
+            <hr class="mt-8 mb-8">
+          </footer>
+    </main>
+</body>
+</html>
